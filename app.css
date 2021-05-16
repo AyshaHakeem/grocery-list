@@ -19,7 +19,7 @@ body {
 
 section {
     background-color: white;
-    min-height: 40vh;
+    /* height: 40vh; */
     width: 45vw;
     padding: 1rem 0;
     margin-top: -2rem;
@@ -104,6 +104,7 @@ h3 {
 .grocery-container {
     display: grid;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     visibility: hidden;
 }
 
@@ -161,6 +162,7 @@ h3 {
 }
 
 .clear-btn {
+    margin-top: 1rem;
     align-self: center;
     border: none;
     background-color: transparent;
@@ -175,13 +177,12 @@ h3 {
 @media (max-width: 992px) {
     section {
         width: 60vw;
-        height: 45vh;
     }
 }
 
 @media (max-width: 600px) {
     section {
-        min-width: 80vw;
+        width: 80vw;
     }
     .submit-btn {
         width: 12vw;
