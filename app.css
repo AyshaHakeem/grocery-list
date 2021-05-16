@@ -1,0 +1,189 @@
+:root {
+    --bRadius: 0.5rem;
+    --font1: 'Fira Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #edf6f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: white;
+    min-height: 40vh;
+    width: 45vw;
+    padding: 1rem 0;
+    margin-top: -2rem;
+    border-radius: var(--bRadius);
+    box-shadow: 0px 5px 15px #adb5bd;
+}
+
+h3 {
+    color: #264653;
+    font-family: var(--font1);
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.25rem;
+}
+
+.alert {
+    margin: 0 2rem 1rem 2rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: .8rem;
+    border-radius: 0.25rem;
+    letter-spacing: .2rem;
+}
+
+.alert-empty {
+    background-color: rgb(255, 223, 223);
+    color: rgb(112, 0, 0);
+}
+
+.alert-new {
+    background-color: rgb(230, 255, 230);
+    color: rgb(0, 82, 0);
+}
+
+.alert-edit {
+    background-color: rgb(230, 255, 230);
+    color: rgb(0, 82, 0);
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+}
+
+#grocery {
+    margin-left: 2rem;
+    flex-grow: 1;
+    border: transparent;
+    background-color: #f5f3f4;
+    padding: 0.3rem;
+    border-radius: .2rem 0 0 .2rem;
+    font-size: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+#grocery:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.submit-btn {
+    margin-right: 2rem;
+    border: transparent;
+    background-color: #bfdbf7;
+    padding: 0.3rem;
+    border-radius: 0 .2rem .2rem 0;
+    font-size: .8rem;
+    width: 7vw;
+    transition: all .25s ease-in;
+}
+
+.submit-btn:hover {
+    background-color: #48cae4;
+    color: white;
+}
+
+
+/* parent */
+
+.grocery-container {
+    display: grid;
+    margin-top: 1rem;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+
+/* article */
+
+.grocery-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0 4rem;
+}
+
+.grocery-list {
+    padding-top: 1rem;
+}
+
+.title {
+    font-family: var(--font1);
+    font-size: .9rem;
+    color: #1b3641;
+}
+
+.btn-group {
+    text-align: right;
+    margin-top: 0;
+}
+
+.edit-btn,
+.trash-btn {
+    border: none;
+    background-color: transparent;
+    color: #80ffdb;
+}
+
+.edit-btn {
+    color: #80ffdb;
+    margin-right: .5rem;
+}
+
+.edit-btn:hover {
+    color: #6fecc9;
+}
+
+.trash-btn {
+    color: #e63946;
+}
+
+.trash-btn:hover {
+    color: #d6313e;
+}
+
+.clear-btn {
+    align-self: center;
+    border: none;
+    background-color: transparent;
+    color: #ba181b;
+    letter-spacing: 0.25rem;
+}
+
+.clear-btn:hover {
+    color: rgb(117, 1, 1);
+}
+
+@media (max-width: 992px) {
+    section {
+        width: 60vw;
+        height: 45vh;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        min-width: 80vw;
+    }
+    .submit-btn {
+        width: 12vw;
+    }
+}
