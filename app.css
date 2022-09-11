@@ -185,6 +185,10 @@ h3 {
         width: 80vw;
     }
     .submit-btn {
-        width: 12vw;
+        width: 14vw;
+        margin-right: 1rem;
+    }
+    #grocery {
+        margin-left: 2rem;
     }
 }
