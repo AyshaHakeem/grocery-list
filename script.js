@@ -19,8 +19,6 @@ window.addEventListener('load', () => {
     
     Object.keys(localStorage).forEach((x)=>{
 
-            id = new Date().getTime().toString(); //getTime -> to milliseconds
-
             const element = document.createElement('article');
             element.classList.add('grocery-item');
             element.innerHTML = (`<p class='title'> ${localStorage.getItem(x)} </p>
